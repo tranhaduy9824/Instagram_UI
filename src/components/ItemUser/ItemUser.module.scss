@@ -1,0 +1,55 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px 24px;
+    font-size: 14px;
+    line-height: 18px;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .user-tippy {
+        .nick-name,
+        .avatar {
+            cursor: pointer;
+        }
+    }
+
+    .avatar {
+        width: 44px;
+        margin-right: 12px;
+    }
+
+    .full-name {
+        color: var(--second-text);
+    }
+
+    .delete-btn {
+        position: absolute;
+        right: 24px;
+        height: 32px;
+        padding: 8px;
+        color: var(--second-text);
+        text-align: center;
+        font-size: 2.1rem;
+    }
+
+    .change,
+    .follow {
+        position: absolute;
+        top: 50%;
+        right: 16px;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        font-weight: 500;
+        color: var(--primary-btn);
+
+        &:hover {
+            cursor: pointer;
+            color: var(--white);
+        }
+    }
+}

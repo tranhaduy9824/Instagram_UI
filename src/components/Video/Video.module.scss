@@ -1,0 +1,40 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 470px;
+    height: 587px;
+    border: 1px solid var(--highlight-background);
+    border-radius: 4px;
+
+    .video {
+        width: 70%;
+        height: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .box-sound {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 44px;
+        height: 44px;
+    }
+
+    .sound-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        background-color: var(--highlight-background);
+        border-radius: 100%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

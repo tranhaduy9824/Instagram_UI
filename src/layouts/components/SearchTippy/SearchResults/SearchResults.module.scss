@@ -1,0 +1,64 @@
+.wrapper {
+    width: calc(var(--search-tippy-width) - 1px);
+    height: calc(100vh - 141px);
+    background-color: var(--black);
+    padding-top: 8px;
+    overflow-y: auto;
+}
+
+.box-input {
+    position: relative;
+    padding: 0 16px;
+    margin-bottom: 24px;
+}
+
+.icon-search {
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+    color: var(--second-text);
+    font-weight: 400;
+}
+
+.icon-search + .input {
+    padding: 3px 44px;
+    color: var(--second-text);
+}
+
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 3px 16px;
+    background-color: var(--highlight-background);
+    border-radius: 8px;
+    font-size: 1.5rem;
+}
+
+.icon-delete,
+.icon-loading {
+    position: absolute;
+    top: 50%;
+    right: 28px;
+    transform: translateY(-50%);
+    width: 1.8rem;
+    height: 1.8rem;
+    color: #c8c8c8;
+}
+
+.icon-loading {
+    animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    from {
+        transform: translateY(-50%) rotate(0);
+    }
+    to {
+        transform: translateY(-50%) rotate(360deg);
+    }
+}
+
+.icon-delete {
+    top: 42%;
+}
